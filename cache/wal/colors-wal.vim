@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/hugo/Pictures/Wallpapers/k-onWallpaper.jpeg"
+let background = "#0c1c1f"
+let foreground = "#e2d9cb"
+let cursor     = "#e2d9cb"
+
+" Colors
+let color0  = "#0c1c1f"
+let color1  = "#996563"
+let color2  = "#9F8D72"
+let color3  = "#687980"
+let color4  = "#3E8385"
+let color5  = "#649591"
+let color6  = "#9BA393"
+let color7  = "#e2d9cb"
+let color8  = "#9e978e"
+let color9  = "#996563"
+let color10 = "#9F8D72"
+let color11 = "#687980"
+let color12 = "#3E8385"
+let color13 = "#649591"
+let color14 = "#9BA393"
+let color15 = "#e2d9cb"

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/hugo/Pictures/Wallpapers/k-onWallpaper.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1c1f",
+        "foreground": "#e2d9cb",
+        "cursor": "#e2d9cb"
+    },
+    "colors": {
+        "color0": "#0c1c1f",
+        "color1": "#996563",
+        "color2": "#9F8D72",
+        "color3": "#687980",
+        "color4": "#3E8385",
+        "color5": "#649591",
+        "color6": "#9BA393",
+        "color7": "#e2d9cb",
+        "color8": "#9e978e",
+        "color9": "#996563",
+        "color10": "#9F8D72",
+        "color11": "#687980",
+        "color12": "#3E8385",
+        "color13": "#649591",
+        "color14": "#9BA393",
+        "color15": "#e2d9cb"
+    }
+}

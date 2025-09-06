@@ -1,0 +1,1 @@
+2025-09-06 14:53:49: Starting server using secret key: /home/hugo/.config/joplin-desktop/ipc_secret_key.txt

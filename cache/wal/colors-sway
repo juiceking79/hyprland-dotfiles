@@ -1,0 +1,21 @@
+set $wallpaper /home/hugo/Pictures/Wallpapers/k-onWallpaper.jpeg
+
+set $background #0c1c1f
+set $foreground #e2d9cb
+
+set $color0 #0c1c1f
+set $color1 #996563
+set $color2 #9F8D72
+set $color3 #687980
+set $color4 #3E8385
+set $color5 #649591
+set $color6 #9BA393
+set $color7 #e2d9cb
+set $color8 #9e978e
+set $color9 #996563
+set $color10 #9F8D72
+set $color11 #687980
+set $color12 #3E8385
+set $color13 #649591
+set $color14 #9BA393
+set $color15 #e2d9cb

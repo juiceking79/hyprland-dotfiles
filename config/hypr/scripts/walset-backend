@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Check if the user provided an argument
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <path_to_image>"
+    exit 1
+fi
+
+IMAGE="$1"
+
+# Send notification to the user
+notify-send "Changing Theme" "Applying new wallpaper and updating colors, please wait until confirmation..."
+
+# Set wallpaper
+swww img "$IMAGE" --transition-type="center" --transition-step=100 --transition-fps="60"
+
+# Generate pywal colors
+# wal -i "$IMAGE" -n -s -t -e
+
+# Make nvim use pywal colors
+python3 /home/hugo/.config/nvim/pywal/chadwal.py
+
+# Refresh Spotify
+#pywal-spicetify Dribbblish
+
+# Use Matugen to generate Material You colors
+matugen image "$IMAGE"
+
+# Refresh waybar
+pkill waybar
+waybar > /dev/null 2>&1 &
+
+# Refresh dunst
+pkill swaync
+swaync > /dev/null 2>&1 &
+
+LOCK_BG="$HOME/Pictures/Wallpapers/Cache/CurrentWallpaper.png"
+
+# Convert to PNG if necessary
+extension="${IMAGE##*.}"
+if [ "$extension" != "png" ]; then
+    convert "$IMAGE" "$LOCK_BG"
+else
+    cp "$IMAGE" "$LOCK_BG"
+fi
+
+# Final notification
+notify-send "Theme Applied" "Wallpaper and theme updated successfully!"
+
