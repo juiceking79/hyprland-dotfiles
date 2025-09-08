@@ -55,6 +55,10 @@ output_path = '~/.cache/wal/base46-dark.lua'
 input_path = '~/.config/matugen/templates/btop.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
 
+[templates.spicetify]
+input_path = '~/.config/matugen/templates/color.ini'
+output_path = '~/.config/spicetify/Themes/marketplace/color.ini'
+
 [config.custom_colors.red]
 color = "#FF0000"
 blend = true
