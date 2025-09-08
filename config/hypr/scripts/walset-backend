@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Check if the user provided an argument
 if [ "$#" -ne 1 ]; then
@@ -33,6 +33,9 @@ waybar > /dev/null 2>&1 &
 # Refresh dunst
 pkill swaync
 swaync > /dev/null 2>&1 &
+
+$HOME/.spicetify/spicetify apply
+$HOME/.spicetify/spicetify update
 
 LOCK_BG="$HOME/Pictures/Wallpapers/Cache/CurrentWallpaper.png"
 
