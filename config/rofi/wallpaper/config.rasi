@@ -38,7 +38,7 @@ window {
     padding:                     0px;
     border:                      2px solid;
     border-radius:               10px;
-    border-color:                @source-color;
+    border-color:                transparent;
     cursor:                      "default";
     /* Backgroud Colors */
     background-color:            @surface;
@@ -75,7 +75,7 @@ inputbar {
     border-radius:               0px;
     border-color:                @surface;
     background-color:            transparent;
-    text-color:                  #f9f5d7;
+    text-color:                  #ffffff;
     children:                    [ "textbox-prompt-colon", "entry", "mode-switcher" ];
 }
 
@@ -145,14 +145,14 @@ listview {
     border-radius:               0px;
     border-color:                @surface;
     background-color:            transparent;
-    text-color:                  #f9f5d7;
+    text-color:                  #ffffff;
     cursor:                      "default";
 }
 scrollbar {
     handle-width:                5px;
     handle-color:                @primary;
     border-radius:               10px;
-    background-color:            #f9f5d7;
+    background-color:            #ffffff;
 }
 
 /*****----- Elements -----*****/
@@ -165,13 +165,13 @@ element {
     border-radius:               10px;
     border-color:                @surface;
     background-color:            transparent;
-    text-color:                  #f9f5d7;
+    text-color:                  #ffffff;
     cursor:                      pointer;
     orientation:                 vertical;
 }
 element normal.normal {
     background-color:            transparent;
-    text-color:                  #f9f5d7;
+    text-color:                  #ffffff;
 }
 element normal.urgent {
     background-color:            @surface;
@@ -220,14 +220,14 @@ message {
     border-radius:               0px 0px 0px 0px;
     border-color:                @surface;
     background-color:            transparent;
-    text-color:                  #f9f5d7;
+    text-color:                  #ffffff;
 }
 textbox {
     padding:                     8px 10px;
     border:                      0px solid;
     border-radius:               10px;
     border-color:                @surface;
-    background-color:            #f9f5d7;
+    background-color:            #ffffff;
     text-color:                  @surface;
     vertical-align:              0.5;
     horizontal-align:            0.0;

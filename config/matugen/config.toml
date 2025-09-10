@@ -26,11 +26,6 @@ input_path = '/home/hugo/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/colors.conf'
 post_hook = 'pkill -SIGUSR1 kitty'
 
-[templates.dunst]
-input_path = '/home/hugo/.config/matugen/templates/dunstrc'
-output_path = '~/.config/dunst/dunstrc'
-post_hook = 'pkill -SIGUSR2 dunst'
-
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/colors.css'
@@ -58,6 +53,11 @@ output_path = '~/.config/btop/themes/matugen.theme'
 [templates.spicetify]
 input_path = '~/.config/matugen/templates/color.ini'
 output_path = '~/.config/spicetify/Themes/marketplace/color.ini'
+
+[templates.pywalfox]
+input_path = '~/.config/matugen/templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
 
 [config.custom_colors.red]
 color = "#FF0000"

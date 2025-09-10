@@ -12,11 +12,11 @@
 /* Notification */
 
 .notification {
-    background: @background;
+    background: @surface_container_low;
     color: @fontcolor;
-    border: 3px solid @primary;
+    border: 3px solid transparent;
     border-radius: 11px;
-    padding:10px;
+    padding: 10px;
 }
 
 .body {
@@ -68,11 +68,11 @@
 .control-center {
     background-color: @background;
     color: @fontcolor;
-    border: 2px solid @primary;
+    border: 2px solid transparent;
     padding: 11px;
-    min-height: 992px;
-    margin-top: -1px;
-    margin-right: -3px;
+    min-height: 987px;
+    margin-top: 2px;
+    margin-right: 1px;
 }
 
 /* Notifications expanded-group */
@@ -81,7 +81,6 @@
   background-color: transparent;
   margin: 2px 8px 2px 8px;
   font-size: 14px;
-
 }
 
 .notification-group-icon {
@@ -124,14 +123,14 @@
 .widget-title>button {
   font-size: 1rem;
   color: @fontcolor;
-  background: @surface_container_low;
+  background: @surface_container;
   box-shadow: none;
   border: 2px solid transparent;
 }
 
 .widget-title>button:hover {
-  border: 2px solid @primary;
   color: @fontaltcolor;
+  background: @primary;
 }
 
 .widget-title>button:active {
@@ -158,7 +157,7 @@ button {
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  border: 2px solid @primary;
+    background: @primary
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:active {

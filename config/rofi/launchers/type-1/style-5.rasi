@@ -9,11 +9,10 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun,run,filebrowser,window";
+	modi:                       "drun,run,window";
     show-icons:                 true;
     display-drun:               " ";
     display-run:                " ";
-    display-filebrowser:        " ";
     display-window:             " ";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
@@ -41,7 +40,7 @@ window {
     padding:                     0px;
     border:                      2px solid;
     border-radius:               10px;
-    border-color:                @source-color;
+    border-color:                transparent;
     cursor:                      "default";
     /* Backgroud Colors */
     background-color:            @surface;
@@ -234,7 +233,7 @@ button {
 }
 button selected {
     background-color:            @primary;
-    text-color:                  #f9f3d7;
+    text-color:                  #ffffff;
 }
 
 /*****----- Message -----*****/

@@ -32,6 +32,15 @@ button:hover {
     font-size: 20px;
 }
 
+tooltip {
+    background-color: @surface;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 11px;
+    font-size: 14px;
+    border: none;
+    }
+
 /* you can set a style on hover for any module like this */
 
 #power-profiles-daemon {
@@ -112,6 +121,7 @@ button:hover {
 #battery {
     background-color: transparent;
     color: #ffffff;
+    padding-right: 5px;
 }
 
 #battery.charging, #battery.plugged {
@@ -138,7 +148,7 @@ button:hover {
 }
 
 #power-profiles-daemon {
-    padding-right: 15px;
+    padding-right: 11px;
 }
 
 #power-profiles-daemon.performance {
@@ -189,6 +199,7 @@ label:focus {
 #pulseaudio {
     background-color: transparent;
     color: #ffffff;
+    padding-left: 7px;
 }
 
 #pulseaudio.muted {
