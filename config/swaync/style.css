@@ -1,0 +1,265 @@
+@import 'colors.css';
+
+@define-color fontcolor 	    #ffffff;
+@define-color fontaltcolor 	    #ffffff;
+
+/* Config */
+
+* {
+    font-family: "JetbrainsMono NF";
+}
+
+/* Notification */
+
+.notification {
+    background: @surface_container_low;
+    color: @fontcolor;
+    border: 3px solid transparent;
+    border-radius: 11px;
+    padding: 10px;
+}
+
+.body {
+  color: @fontcolor;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @primary;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+  color: @fontcolor;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.close-button {
+  background-color: @primary;
+  color: @fontaltcolor;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 11px;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @fontcolor;
+    background: transparent;
+}
+
+.notification.critical progress {
+  background-color: @primary;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: @primary;
+}
+
+/* Control Center */
+
+.control-center {
+    background-color: @background;
+    color: @fontcolor;
+    border: 2px solid transparent;
+    padding: 11px;
+    min-height: 987px;
+    margin-top: 2px;
+    margin-right: 1px;
+}
+
+/* Notifications expanded-group */
+
+.notification-group {
+  background-color: transparent;
+  margin: 2px 8px 2px 8px;
+  font-size: 14px;
+}
+
+.notification-group-icon {
+  color: @fontcolor;
+}
+
+.notification-group-headers {
+  color: @fontcolor;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+  background: @surface_container_high;
+  color: @fontaltcolor;
+  margin: 4px; 
+  border-radius: 11px;
+  padding: 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+  background: @primary;
+  color: @fontaltcolor;
+}  
+
+/* top label widget */ 
+.widget-label {
+  color: @fontcolor;
+  font-weight: 600;
+}
+
+.widget-label>label {
+  font-size: 22px;
+}
+
+/* widget title */
+.widget-title {
+  color: @fontcolor;
+}
+.widget-title>button {
+  font-size: 1rem;
+  color: @fontcolor;
+  background: @surface_container;
+  box-shadow: none;
+  border: 2px solid transparent;
+}
+
+.widget-title>button:hover {
+  color: @fontaltcolor;
+  background: @primary;
+}
+
+.widget-title>button:active {
+  background: @primary;
+}
+
+/* widget button grid */
+button {
+    border: 0px;
+    min-width: 35px;
+    background: @surface_container_high;
+}
+
+.widget-buttons-grid {
+  font-size: x-large;
+  background: @surface_container_low;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    color: @fontcolor;
+    margin: 8px;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: @primary
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:active {
+  background: @primary;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+  background: @primary;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked label {
+    color: @fontaltcolor;
+}
+
+/* dnd widget */
+.widget-dnd {
+  background: transparent;
+  border: 2px solid transparent;
+  font-size: large;
+  color: @fontcolor;
+}
+
+.widget-dnd>label {
+  color: @fontcolor;
+}
+
+.widget-dnd>switch {
+  background: @surface_container_high;
+  color: @fontcolor;
+  border-radius: 11px;
+  border: 2px solid transparent;
+}
+
+.widget-dnd>switch:checked {
+  background: @primary;
+  border: 2px solid @primary;
+}
+
+.widget-dnd>switch slider {
+  background: @fontcolor;
+}
+
+.widget-dnd>switch:checked slider {
+  background: @fontcolor;
+}
+
+/* volume & backlight widget */
+
+.widget-volume {
+  background: @surface_container_low;
+  color: @fontcolor;
+  font-size: x-large;
+}
+
+
+.widget-backlight {
+  background: @surface_container_low;
+  color: @fontcolor;
+  font-size: x-large;
+}
+
+/* music player widget */
+.widget-mpris {
+  background: transparent;
+  margin-top: 15px;
+}
+
+.widget-mpris button {
+  background-color: transparent;
+  border-radius: 11px;
+}
+
+.widget-mpris button:hover {
+  background-color: @primary;
+  color: @fontaltcolor;
+}
+
+/* sliders in backlight and volume */
+
+trough slider {
+    background: @fontcolor;
+}
+
+trough slider:hover {
+    background: @primary;
+}
+
+trough highlight {
+  background: @primary;
+}
+
+/* remove focus from all buttons */
+
+button:focus,
+button.toggle:focus,
+.widget-title > button:focus,
+.widget-buttons-grid button:focus,
+.widget-dnd > switch:focus,
+.widget-mpris button:focus {
+    box-shadow: none;                  /* removes GTK focus ring */
+    outline: none;                     /* some themes use outline */
+    border-color: transparent;         /* removes any colored border */
+    -GtkWidget-focus-line-width: 0;    /* removes the dotted line outside activate zone */
+}
+
