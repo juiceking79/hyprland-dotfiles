@@ -121,7 +121,7 @@ tooltip {
 #battery {
     background-color: transparent;
     color: #ffffff;
-    padding-right: 5px;
+    padding-right: 7px;
 }
 
 #battery.charging, #battery.plugged {

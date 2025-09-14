@@ -193,7 +193,7 @@
       },
       "max-length": 100,
       "interval": 2,
-      "tooltip-format": "{title}\n{artist} ({album})"
+      "tooltip": false
     },
     "custom/archlogo": {
     	"format": "",
